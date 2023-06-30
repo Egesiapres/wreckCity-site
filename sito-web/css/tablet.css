@@ -1,0 +1,496 @@
+/*@media screen and ((max-width: 769px) or (max-height: 601px)) {*/
+@media screen and (max-width: 1279px) {
+    /*#region GRAPHICAL COMPONENTS*/
+    button, input[type="button"], .cta-button {
+        padding: 6px 25px;
+        border-radius: 10px;
+        font-size: 1.875rem;
+        line-height: 1.25em;
+        border: solid 2.5px transparent;
+    }
+
+    button::before, input[type="button"]::before, .cta-button::before {
+        margin: -2.5px;
+    }
+
+    .cta-gear{
+        margin: 65.5px 0;
+    }
+    
+    .cta-gear::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 100px;
+        height: 100px;
+        background-image: url("../images/Ingranaggi.png");
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+        z-index: -2;
+    }
+
+    /*#endregion*/
+
+    /*#region LANDING PAGE*/
+    .landing {
+        background-image: url("../images/Home_Sfondo.jpg"), linear-gradient(180deg, transparent 0%,transparent 33.333%, var(--ash) 100%);
+        background-position: max(-365px, 50%) 0, 0 0;
+        background-blend-mode: overlay;
+    }
+
+    .landing .content {
+        padding-top: max(97px, 9.473vh);
+        padding-right: 0;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .landing .content .logo {
+        padding: clamp(0px, 10rem, 15vh) 0 20px;
+        text-align: center;
+    }
+
+    .landing .content .logo > img {
+        width: 74%;
+        left: -56px;
+    }
+
+    .landing .content .text {
+        text-align: center;
+        width: 66.666%;
+    }
+
+    .landing .content .cta-button {
+        padding: 6px 25px;
+        font-size: 1.875rem;
+    }
+
+    .landing footer {
+        align-self: center;
+        margin: 0;
+        max-width: 80%;
+        height: 97px;
+        border-top: 2px solid var(--yellow);
+        border-image: var(--gold-vertical) 2 stretch;
+    }
+
+    .landing .social > img {
+        width: 35px;
+        height: 35px;
+    }
+    /*#endregion*/
+
+    /*#region HOMEPAGE*/
+
+    /* HEADER */
+    .page header {
+        height: 110px;
+        padding: 28.5px 40px;
+    }
+
+    .page header .logo {
+        width: 19.285%;
+    }
+    
+    .page header .logo > img {
+        left: -33px;
+    }
+    
+    .page header .menu {
+        max-width: 480px;
+        width: 80.715%;
+    }
+
+    .page header .menu li {
+        font-size: 1.25rem;
+    }
+
+    .page header .menu li a,
+    .page header .menu li a:link,
+    .page header .menu li a:visited {
+        border-bottom: .125rem transparent solid;
+    }
+
+    .page .big-image {
+        min-height: 393px;
+    }
+
+    .homepage .cta-button {
+        width: 150px;
+    }
+
+    .page section {
+        row-gap: 50px;
+        border-top: 7px solid var(--yellow);
+        border-image: var(--gold-vertical) 7 stretch;
+        padding: 50px 40px;
+        font-size: 1.25rem;
+    }
+
+    .page section.light {
+        padding: 50px 40px;
+    }
+
+    .page section h1 {
+        font-size: 5rem;
+        letter-spacing: 0.03em;
+        margin: 0;
+    }
+
+    .page section .row, .page section .column {
+        margin: 0;
+    }
+
+    /* CITY */
+
+    .page section .map .pin .tooltip {
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        border-radius: 10px;
+        padding: 1.125rem;
+        width: 1436%;
+    }
+
+    .page section .map .pin .tooltip .title {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    
+    .page section .cards {
+        display: none;
+    }
+
+    /* HISTORY */
+
+    .page section.history .events {
+        padding-left: 0%;
+        background-position: 60% 0px;
+        background-size: auto 100%;
+    }
+
+    .page section.history .events .event {
+        margin-bottom: 3.75rem;
+    }
+
+    .page section.history .events .event .year {
+        font-size: 2.1875rem;
+        margin: 0 0 0.3125rem;
+    }
+    
+    .page section.history .events .event .name {
+        font-size: 3.125rem;
+        line-height: 1.25em;
+        margin: 0 0 0;
+    }
+    
+    .page section.history .events .event .description {
+        display: none;
+    }
+
+    .page section.history .events .event .cta-button {
+        padding: 6px 25px;
+        font-size: 1.875rem;
+        margin-top: 1.3125rem;
+        text-align: center;
+        width: fit-content;
+    }
+
+    /* POLITICS */
+
+    .page section .framed-image {
+        width: 100%;
+        left: 0;
+        border-radius: 10px;
+        border: solid 4px transparent;
+    }
+
+    .page section .framed-image::before {
+        margin: -4px;
+    }
+
+    .page section .framed-image > img {
+        border-radius: 7px;
+    }
+
+    .page .column.little {
+        margin: 0 calc(20% - 20px);
+        row-gap: 0.9375rem;
+    }
+    
+    .page section h2 {
+        font-size: 3.125rem;
+    }
+
+    .page .less-wide {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 20px;
+        padding: 0 calc(10% + 20px);
+    }
+
+    .page section .less-wide .politician {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page section .less-wide .politician .photo {
+        width: 200px;
+        border-radius: 15px;
+        border: solid 5px transparent;
+        margin-bottom: 0;
+    }
+    
+    .page section .less-wide .politician .photo::before {
+        margin: -5px;
+    }
+
+    .page section .less-wide .politician .aside {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .page section .less-wide .politician .aside .name {
+        margin-bottom: 10px;
+        float: right;
+        display: block;
+    }
+
+    .page section .less-wide .curiosity {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        column-gap: 5%;
+        padding-bottom: 80px;
+    }
+
+    .page section .less-wide .curiosity > div {
+        width: 80%;
+    }
+
+    .page section .less-wide .curiosity > img {
+        width: 38%;
+        height: auto;
+        position: absolute;
+        right: -18%;
+        bottom: 0;
+    }
+
+    /* FOOTER */
+
+    .page footer {
+        padding: 40px;
+        border-top: 6px solid var(--yellow);
+        border-image: var(--gold-vertical) 6 stretch;
+        font-size: 0.625rem;
+    }
+
+    .page footer .less-wide {
+        padding: 0 20px;
+    }
+
+    .page footer .logo-wrapper .logo {
+        width: 189px;
+        height: 42px;
+    }
+
+    .page footer .logo-wrapper .motto {
+        margin-left: 100px;
+    }
+
+    .page footer .social-wrapper {
+        top: -20%;
+        column-gap: 46px;
+    }
+
+    .page footer .social-wrapper a {
+        width: 24px;
+        height: 24px;
+    }
+
+    .page footer .right-reserved {
+        font-size: 0.5rem;
+        width: 60%;
+        padding-top: 14px;
+        margin-top: 18px;
+        border-top: 2px solid var(--yellow);
+        border-image: var(--gold-vertical) 2 stretch;
+    }
+
+    /*#endregion*/
+
+    /*#region SERVICES*/
+    .services .big-image .owl {
+        right: 0;
+        width: 15.104%;
+    }
+
+    .page section .cards-bg .card-bg {
+        border-radius: 15px;
+        border: solid 4px transparent;
+        row-gap: 45px;
+    }
+
+    .page section .cards-bg .card-bg::before {
+        margin: -4px;
+    }
+
+    .page section .cards-bg .card-bg > img {
+        border-radius: 11px;
+    }
+
+    .page section .cards-bg .card-bg .overlay {
+        row-gap: 25px;
+        padding-bottom: 50px;
+        font-size: 1.25rem;
+    }
+
+    .page section .cards-bg .card-bg .overlay .cta-button {
+        padding: 6px 25px;
+        font-size: 1.875rem;
+    }
+    /*#endregion*/
+
+    /*#region ACCESS*/
+
+    /* HEADER */
+
+    .page .full-paragraph{
+        margin: 0;
+    }
+
+    .page .full-paragraph h2,
+    .page .row-paragraph h2 {
+        margin-bottom: 0.9375rem;
+    }
+
+    .page .row-paragraph {
+        margin: 0;
+        column-gap: 5%;
+    }
+
+    .page .row-paragraph .row-image {
+        height: 100%;
+    }
+
+    .access section.light .cards {
+        display: flex;
+        row-gap: 45px;
+    }
+
+    .page section.light .cards .card {
+        border-radius: 20px;
+        border: 4px solid transparent;
+        padding: 3.75rem;
+    }
+
+    .page section.light .cards .card::before {
+        margin: -4px;
+    }
+    
+    .page section.light .cards .card .title {
+        font-size: 3.125rem;
+        width: 50%;
+    }
+    
+    .page section.light .cards .card .text {
+        font-size: 1.25rem;
+        width: 50%;
+    }
+    /*#endregion*/
+
+    /*#region TRANSPORT*/
+    .transport section .cta-button {
+        padding: 6px 25px;
+        font-size: 1.875rem;
+    }
+    /*#endregion*/
+
+    /*#region DEPURATOR*/
+
+    /* HEADER */
+
+    .depurator section .full-paragraph .cta-wrapper {
+        margin-top: 1.875rem;
+        text-align: center;
+    }
+
+    .depurator section .full-paragraph .cta-button {
+        padding: 6px 25px;
+        font-size: 1.875rem;
+    }
+
+    .depurator section .framed-image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .page .row-paragraph h3 {
+        margin-bottom: 0.9375rem;
+        font-size: 2.1875rem;
+    }
+    /*#endregion*/
+
+    /*#region INFLUENCES*/
+
+    /* HEADER */
+
+    .influences section .less-wide {
+        padding: 0 10%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        column-gap: 20%;
+        align-items: flex-start;
+    }
+
+    .influences section .less-wide .politician {
+        width: 30%;
+        flex-direction: column;
+    }
+
+    .influences section .less-wide .politician .photo {
+        width: 100%;
+    }
+
+    .influences section .less-wide .politician .aside {
+        width: 100%;
+    }
+    
+    .influences section .less-wide .politician .aside h2 {
+        text-align: center;
+        margin: 0.75rem 0;
+    }
+
+    .influences section .framed-image {
+        width: 83.333%;
+        left: 0;
+        margin: 0 8.333%;
+    }
+
+    .page .full-paragraph h3 {
+        margin-bottom: 1.875rem;
+        font-size: 3.75rem;
+        font-style: italic;
+    }
+
+    .page section ul {
+        list-style: disc inside;
+    }
+
+    .page section li {
+        display: list-item;
+    }
+
+    /*#endregion*/
+}

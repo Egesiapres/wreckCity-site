@@ -1,0 +1,620 @@
+/*@media screen and ((max-width: 321px) or (max-height: 513px)) {*/
+@media screen and (max-width: 679px) {
+    /*#region GRAPHICAL COMPONENTS*/
+    button, input[type="button"], .cta-button {
+        padding: 0 10px;
+        border-radius: 3px;
+        font-size: 0.8125rem;
+        line-height: 1.5em;
+        border: solid 1px transparent;
+        text-align: center;
+    }
+
+    button::before, input[type="button"]::before, .cta-button::before {
+        margin: -1px;
+    }
+
+    .cta-gear{
+        margin: 10.5px 0;
+    }
+    
+    .cta-gear::after {
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+    /*#endregion*/
+
+    /*#region LANDING PAGE*/
+    .landing {
+        background-position:  max(-250px, 50%) 0, 0 0;
+    }
+
+    .landing .content {
+        padding-top: max(50px, 8.802vh);
+        gap: 12px;
+    }
+
+    .landing .content .logo {
+        padding: clamp(0px, 14rem, 40vh) 0 0;
+    }
+
+    .landing .content .logo > img {
+        width: 44%;
+        left: -24px;
+    }
+
+    .landing .content .text {
+        width: 57.5%;
+        font-size: 0.75rem;
+        line-height: 1.5em;
+    }
+
+    .landing .content .cta-button {
+        padding: 0 10px;
+        font-size: 0.8125rem;
+        line-height: 1.5em;
+    }
+
+    .landing footer {
+        width: 250px;
+        height: 50px;
+        border-top: 1px solid var(--yellow);
+        border-image: var(--gold-vertical) 1 stretch;
+    }
+
+    .landing .social > img {
+        width: 20px;
+        height: 20px;
+    }
+    /*#endregion*/
+
+    /*#region HOMEPAGE*/
+
+    /* HEADER */
+    .page header {
+        height: 67px;
+        padding: 15px 20px;
+        flex-direction: row-reverse;
+    }
+
+    .page header .logo {
+        width: auto;
+        height: 100%;
+    }
+    
+    .page header .logo > img {
+        left: 0;
+    }
+
+    .page header .menu ul {
+        transition: all .2s ease-in-out;
+        position: absolute;
+        top: 67px;
+        left: -100%;
+        padding: 0;
+        width: 90%;
+        height: auto;
+        transform: translateX(-50%);
+        background: var(--ash);
+        z-index: 997;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+        border: 1px solid var(--yellow);
+        border-radius: 10px;
+    }
+
+    .page header .menu li {
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 2.25rem;
+        line-height: 1.25em;
+        padding: 0.3125rem 1.875rem;
+        border-bottom: 1px solid transparent;
+        border-image: var(--gold-vertical) 1 stretch;
+    }
+
+    .page header .menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .page header .menu li a,
+    .page header .menu li a:link,
+    .page header .menu li a:visited,
+    .page header .menu li a:hover,
+    .page header .menu li a:active {
+        font-size: 2.25rem;
+        line-height: 1.25em;
+        padding: 0;
+        border: 0;
+    }
+
+
+    .page header .menu .toggler,
+    .page header .menu .hamburger {
+        display: block;
+        visibility: visible;
+    }
+
+    .page header .menu .toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        cursor: pointer;
+        width: 67px;
+        height: 67px;
+        opacity: 0;
+    }
+
+    .page header .menu .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 998;
+        width: 67px;
+        height: 67px;
+        padding: 22px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page header .menu .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2.5px;
+        background: var(--gold-vertical);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s ease;
+    }
+
+    .page header .menu .hamburger > div::before,
+    .page header .menu .hamburger > div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -7px;
+        width: 100%;
+        height: 2.5px;
+        background: inherit;
+    }
+
+    .page header .menu .hamburger > div::after {
+        top: 7px;
+    }
+
+    .page header .menu .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+    }
+
+    .page header .menu .toggler:checked + .hamburger > div:before,
+    .page header .menu .toggler:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .page header .menu .toggler:checked ~ ul {
+        left: 50%;
+    }
+
+    .page .big-image {
+        min-height: 166px;
+    }
+
+    .homepage .cta-button {
+        width: 60px;
+    }
+
+    .page section {
+        row-gap: 20px;
+        border-top: 2px solid var(--yellow);
+        border-image: var(--gold-vertical) 2 stretch;
+        padding: 20px;
+        font-size: 0.75rem;
+    }
+
+    .page section.light {
+        padding: 20px;
+    }
+
+    .page section h1 {
+        font-size: 2.25rem;
+        letter-spacing: 0em;
+    }
+
+    .page section .row, .page section .column {
+        margin: 0;
+        text-align: left;
+    }
+
+    /* CITY */
+
+    .page section .map .pin .tooltip {
+        font-size: 0.75rem;
+        padding: 0.875rem 0.25rem;
+        width: 1784%;
+    }
+
+    .page section .map .pin .tooltip .title {
+        font-size: 0.9375rem;
+    }
+
+    .page section .map .pin .tooltip .description {
+        font-size: 0.75rem;
+    }
+
+    /* HISTORY */
+
+    .page section.history {
+        background-size: 100% 100%, 50% 80%;
+    }
+
+    .page section.history p {
+        text-align: center;
+    }
+
+    .page section.history .events {
+        padding-left: 0%;
+        background-position: 60% 0px;
+        background-size: auto 100%;
+    }
+
+    .page section.history .events .event {
+        margin-bottom: 1.25rem;
+    }
+
+    .page section.history .events .event .year {
+        font-size: 1.125rem;
+        margin: 0;
+    }
+    
+    .page section.history .events .event .name {
+        font-size: 1.25rem;
+    }
+
+    .page section.history .events .event .cta-button {
+        padding: 0 10px;
+        font-size: 0.8125rem;
+        margin-top: 0.3125rem;
+    }
+
+    /* POLITICS */
+
+    .page section .framed-image {
+        border: solid 3px transparent;
+    }
+
+    .page section .framed-image::before {
+        margin: -3px;
+    }
+
+    .page .column.little {
+        margin: 0;
+        row-gap: 1.25rem;
+    }
+    
+    .page .column.little h2 {
+        display: none;
+    }
+
+    .page .less-wide {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 20px;
+        padding: 0;
+    }
+
+    .page section .less-wide .politician {
+        margin-top: 40px;
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 20px;
+    }
+
+    .page section .less-wide .politician .photo {
+        width: 180px;
+        border-radius: 10px;
+        border: solid 3px transparent;
+    }
+    
+    .page section .less-wide .politician .photo::before {
+        margin: -3px;
+    }
+
+    .page section .less-wide .politician .aside {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+    .page section .less-wide .politician .aside .name {
+        float: none;
+        display: block;
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    .page section .less-wide .curiosity {
+        color: white;
+        padding-bottom: 64px;
+    }
+
+    .page section .less-wide .curiosity > div {
+        width: 100%;
+    }
+
+    .page section .less-wide .curiosity > img {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    .page footer {
+        padding: 5px;
+        border-top: 2.5px solid var(--yellow);
+        border-image: var(--gold-vertical) 2.5 stretch;
+    }
+
+    .page footer .less-wide {
+        padding: 0;
+    }
+
+    .page footer .logo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page footer .logo-wrapper .logo {
+        width: 65px;
+        height: 23px;
+    }
+
+    .page footer .logo-wrapper .motto {
+        display: none;
+    }
+
+    .page footer .social-wrapper {
+        top: 150%;
+        column-gap: 20px;
+    }
+
+    .page footer .social-wrapper a {
+        width: 10px;
+        height: 10px;
+    }
+
+    .page footer address {
+        display: none;
+    }
+
+    .page footer .right-reserved {
+        font-size: 0.15625rem;
+        width: 60%;
+        padding-top: 20px;
+        margin-top: 5px;
+        border-top: 1px solid var(--yellow);
+        border-image: var(--gold-vertical) 1 stretch;
+    }
+
+    /*#endregion*/
+
+    /*#region SERVICES*/
+    .services .big-image .owl {
+        width: 22.72%;
+    }
+
+    .page section .cards-bg {
+        padding: 0 20px;
+        row-gap: 30px;
+    }
+
+    .page section .cards-bg .card-bg {
+        border-radius: 10px;
+        border: solid 2px transparent;
+    }
+
+    .page section .cards-bg .card-bg::before {
+        margin: -2px;
+    }
+
+    .page section .cards-bg .card-bg > img {
+        border-radius: 8px;
+    }
+
+    .page section .cards-bg .card-bg .overlay {
+        padding-bottom: 10px;
+        font-size: 1.25rem;
+    }
+
+    .page section .cards-bg .card-bg .overlay .cta-button {
+        padding: 0 10px;
+        font-size: 0.8125rem;
+    }
+
+    .page section .cards-bg .card-bg .overlay .text {
+        display: none;
+    }
+    /*#endregion*/
+
+    /*#region ACCESS*/
+
+    /* HEADER */
+
+    .page .full-paragraph h2,
+    .page .row-paragraph h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1.625rem;
+        text-align: center;
+    }
+
+    .page .row-paragraph {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 1.625rem;
+    }
+
+    .page .row-paragraph.reverse {
+        flex-direction: column;
+    }
+
+    .page .row-paragraph .row-image,
+    .page .row-paragraph .row-text {
+        width: 100%;
+    }
+
+    .page section.light .cards .card {
+        border: 3px solid transparent;
+        padding: 1.25rem 0.875rem;
+    }
+
+    .page section.light .cards .card::before {
+        margin: -3px;
+    }
+    
+    .page section.light .cards .card .title {
+        font-size: 1.25rem;
+        width: 100%;
+    }
+    
+    .page section.light .cards .card .text {
+        font-size: 0.75rem;
+        width: 100%;
+    }
+
+    .page section.light .cards .card .image {
+        top: -5%;
+        right: -30%;
+        left: auto;
+        transform: scale(1) translateY(-50%) translateX(-50%)!important;
+        width: 50%;
+        height: 50%;
+    } 
+    /*#endregion*/
+
+    /*#region TRANSPORT*/
+    .transport section .cta-button {
+        padding: 0 10px;
+        font-size: 0.8125rem;
+    }
+    /*#endregion*/
+
+    /*#region DEPURATOR*/
+
+    /* HEADER */
+
+    .depurator section .full-paragraph .cta-wrapper {
+        margin-top: 0.8125rem;
+    }
+
+    .depurator section .full-paragraph .cta-button {
+        padding: 0 10px;
+        font-size: 0.8125rem;
+    }
+
+    .page .row-paragraph h3 {
+        font-size: 1.125rem;
+        margin-bottom: 1.625rem;
+        text-align: center;
+    }
+    /*#endregion*/
+
+    /*#region INFLUENCES*/
+
+    /* HEADER */
+
+    .influences section .less-wide {
+        padding: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 5%;
+        align-items: flex-start;
+        width: calc(100% + 40px);
+        height: auto;
+        position: relative;
+        left: -20px;
+        overflow-x: auto;
+    }
+
+    .influences section .less-wide .politician {
+        width: 60%;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .influences section .less-wide .politician .photo {
+        flex: 1;
+    }
+
+    .influences section .less-wide .politician .photo > img {
+        object-fit: contain;
+        height: auto;
+        width: auto;
+        max-height: 125%;
+        max-width: 100%;
+    }
+
+    .influences section .less-wide .politician .aside {
+        width: 100%;
+    }
+
+    .influences section .less-wide .politician .aside h2 {
+        text-align: center;
+        margin: 0.75rem 0;
+    }
+
+    .influences section .less-wide .politician.zoom {
+        transform: scale(1.05);
+    }
+
+    .influences section #festivity ~ div h2 {
+        font-size: 2.25rem;
+        line-height: 0.833em;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    .page .full-paragraph h3 {
+        margin-bottom: 0;
+        font-size: 1.125rem;
+    }
+
+    /*#endregion*/
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ((max-width: 769px) or (max-height: 513px)) {
+    .landing .content {
+        padding-top: 0;
+    }
+
+    .landing .content .logo {
+        padding: 20vh 0 0;
+    }
+}
