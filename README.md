@@ -1,5 +1,8 @@
 # WreckCity site
 
+### Preview
+![Accesso](https://github.com/Egesiapres/wreckCity-site/assets/1301054/ce4fa6a1-45d8-4b02-9f3a-a7e64d112110)
+
 ### Description
 My university project of the Visual Communication and Interfaces Design course
 
