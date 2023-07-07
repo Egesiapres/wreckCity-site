@@ -4,7 +4,7 @@
 ![Accesso](https://github.com/Egesiapres/wreckCity-site/assets/1301054/ce4fa6a1-45d8-4b02-9f3a-a7e64d112110)
 
 ### Description
-My university project of the Visual Communication and Interfaces Design course
+My university project of the Visual Communication and Interfaces Design course (II MSc year)
 
 ### 1. Scope
 The course required to realize a responsive website of an imaginary city based on a peculiar theme. My team went for a steam-punk city
